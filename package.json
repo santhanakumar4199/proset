@@ -1,75 +1,20 @@
 {
-  "_args": [
-    [
-      "projectsetupscript",
-      ""
-    ]
-  ],
-  "_from": "projectsetupscript@latest",
-  "_inCache": true,
-  "_installable": true,
-  "_location": "/projectsetupscript",
-  "_nodeVersion": "5.5.0",
-  "_npmOperationalInternal": {
-    "host": "packages-9-west.internal.npmjs.com",
-    "tmp": "tmp/projectsetupscript-1.7.0.tgz_1456519776662_0.09777535311877728"
-  },
-  "_npmUser": {
-    "email": "santhanakumar87@gmail.com",
-    "name": "santhanakumar"
-  },
-  "_npmVersion": "3.5.3",
-  "_phantomChildren": {},
-  "_requested": {
-    "name": "projectsetupscript",
-    "raw": "projectsetupscript",
-    "rawSpec": "",
-    "scope": null,
-    "spec": "latest",
-    "type": "tag"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "https://registry.npmjs.org/projectsetupscript/-/projectsetupscript-1.7.0.tgz",
-  "_shasum": "eb354d2e40dd0ac50277bfa7177a4470897a8655",
-  "_shrinkwrap": null,
-  "_spec": "projectsetupscript",
-  "_where": "",
-  "author": "santhanakumar4199",
-  "bin": {
-    "projectsetupscript": "lib/cli.js"
-  },
-  "bugs": {
-    "url": "https://github.com/santhanakumar4199/projectsetupscript/issues"
-  },
-  "dependencies": {},
-  "description": "CLI tool for running ",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "eb354d2e40dd0ac50277bfa7177a4470897a8655",
-    "tarball": "https://registry.npmjs.org/projectsetupscript"
-  },
-  "engines": {
-    "node": ">=0.12.0"
-  },
-  "files": [
-    "lib"
-  ],
-  "homepage": "https://github.com/santhanakumar4199/projectsetupscript#readme",
-  "keywords": [],
-  "license": "BSD-2-Clause",
+  "name": "proset",
+  "version": "1.0.0",
+  "description": "project setup",
   "main": "index.js",
-  "maintainers": [],
-  "name": "projectsetupscript",
-  "optionalDependencies": {},
+  "preferGlobal":true,
+  "scripts": {
+    "cordova": "/cordovainstall.sh"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/santhanakumar4199/projectsetupscript.git"
+    "url": "git+https://github.com/santhanakumar4199/proset.git"
   },
-  "scripts": {
-    "cordova": "cordovainstall.sh"
+  "author": "santhanakumar <santhanakumar87@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santhanakumar4199/proset/issues"
   },
-  "version": "1.1.0"
+  "homepage": "https://github.com/santhanakumar4199/proset#readme"
 }
