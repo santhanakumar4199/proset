@@ -1,6 +1,6 @@
 {
   "name": "proset",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "project setup",
   "main": "index.js",
   "preferGlobal": "true",
@@ -14,7 +14,7 @@
     "cordova": "/cordovainstall.sh"
   },
   "bin": {
-    "test-module-exec": "bin/cordovainstall.sh"
+    "san-module-exec": "bin/cordovainstall.sh"
   },
   "repository": {
     "type": "git",
