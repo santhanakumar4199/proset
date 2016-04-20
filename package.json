@@ -1,9 +1,9 @@
 {
   "name": "proset",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "project setup",
   "main": "index.js",
-  "preferGlobal":"true",
+  "preferGlobal": "true",
   "directories": {
     "bin": "./bin"
   },
@@ -12,6 +12,9 @@
   },
   "scripts": {
     "cordova": "/cordovainstall.sh"
+  },
+  "bin": {
+    "test-module-exec": "bin/cordovainstall.sh"
   },
   "repository": {
     "type": "git",
