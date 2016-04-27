@@ -1,6 +1,6 @@
 {
   "name": "proset",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "project setup",
   "main": "index.js",
   "preferGlobal": "true",
