@@ -4,23 +4,34 @@ if [ "$1" == "--help" ] ;then
 else
 	read -p "Are you sure want to install Yeoman Setup (yes / no) : " yeoman
 	if [ "$yeoman" == "yes" ]; then
-		read -p "Please provide the application name: " appName		
-		echo "Loading...."
-		yo mytemp $appName
+
+		read -p "Please provide the application name: " appName	
 		read -p "Are you sure include cordova Setup(yes / no)  : " corset
 
 		if [ "$corset" == "yes" ]; then
 
 			read -p "Please provide the package folder name : " folder
 			read -p "Please provide the bundle identifier : " idn
-			read -p "Your application name is : $appName , Have you changed application name for cordova project (yes / no)" appnCh
-			if [ "$appnCh" == "yes" ]; then
-				read -p "Please provide the application name: " tit
-			else
-				tit="$appName"
-			fi
-			# read -p "Please provide the application name: " tit
-			echo "appName: $tit"
+			read -p "Are you sure want to install Android (yes / no) : " androidname
+			read -p "Are you sure want to install IOS (yes / no) : " iosname
+		fi	
+
+		echo "Loading...."
+		yo mytemp $appName
+		
+
+		if [ "$corset" == "yes" ]; then
+
+			
+			# read -p "Your application name is : $appName , Have you changed application name for cordova project (yes / no)" appnCh
+			# if [ "$appnCh" == "yes" ]; then
+			# 	read -p "Please provide the application name: " tit
+			# else
+			# 	tit="$appName"
+			# fi
+			# # read -p "Please provide the application name: " tit
+			# echo "appName: $tit"
+
 			if [ "$idn" != "" ] && [ "$tit" != "" ] ; then
 				echo "Loading...."
 				cordova create $folder com.$idn $appName
@@ -32,16 +43,16 @@ else
 
 			echo "which platforms you want to add "
 
-			read -p "Are you sure want to install Android (yes / no) : " name
+			# read -p "Are you sure want to install Android (yes / no) : " androidname
 
-			if [ "$name" == "yes" ] ;then
+			if [ "$androidname" == "yes" ] ;then
 				echo "Loading...."
 				cordova platform add android
 			fi
 
-			read -p "Are you sure want to install IOS (yes / no) : " name
+			# read -p "Are you sure want to install IOS (yes / no) : " iosname
 
-			if [ "$name" == "yes" ]; then
+			if [ "$iosname" == "yes" ]; then
 				echo "Loading...."
 				cordova platform add ios
 			fi
