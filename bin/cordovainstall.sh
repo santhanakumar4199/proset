@@ -32,7 +32,7 @@ else
 			# # read -p "Please provide the application name: " tit
 			# echo "appName: $tit"
 
-			if [ "$idn" != "" ] && [ "$tit" != "" ] ; then
+			if [ "$idn" != "" ] && [ "$appName" != "" ] ; then
 				echo "Loading...."
 				cordova create $folder com.$idn $appName
 			else
